@@ -13,13 +13,9 @@ A simple note-taking application built with SwiftUI. This app allows users to se
 
 ## Screenshots
 
-
-<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="48">
-<img src="[https://github.com/favicon.ico](https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b)" width="48">
-<img src="[https://github.com/favicon.ico](https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b)" width="48">
-![Landing View](https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b)
-![Notes List View](https://github.com/DeAristyo/Note-App-iOS/assets/84317322/f287fb26-06e4-417d-ae8f-8d0dcbe46072)
-![Note Details View](https://github.com/DeAristyo/Note-App-iOS/assets/84317322/8802bbe5-2184-4dd7-b508-62e018357fe6)
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="240">
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="240">
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/8802bbe5-2184-4dd7-b508-62e018357fe6" width="48">
 
 ## Video Screenshot
 
