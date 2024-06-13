@@ -75,7 +75,7 @@ https://github.com/DeAristyo/Note-App-iOS/assets/84317322/15a571f7-0cd8-40c5-bc9
     - Tap on a note to view its details.
     - Edit the note and save changes to the API.
 
-## Acknowledgements
+## Depedencies
 
 - [SwiftUI](https://developer.apple.com/documentation/swiftui)
 - [Alamofire](https://github.com/Alamofire/Alamofire)
