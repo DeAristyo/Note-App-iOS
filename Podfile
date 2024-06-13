@@ -8,6 +8,7 @@ target 'Note-App-iOS' do
   # Pods for Note-App-iOS
   pod 'Alamofire', '~> 5.4'
   pod 'SwiftyJSON', '~> 5.0'
+  pod 'Wormholy', '~> 1.6'
 
   target 'Note-App-iOSTests' do
     inherit! :search_paths

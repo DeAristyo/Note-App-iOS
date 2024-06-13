@@ -1,6 +1,7 @@
 ${PODS_ROOT}/Target Support Files/Pods-Note-App-iOS-Note-App-iOSUITests/Pods-Note-App-iOS-Note-App-iOSUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/Wormholy/Wormholy.framework
 ${BUILT_PRODUCTS_DIR}/CwlCatchException/CwlCatchException.framework
 ${BUILT_PRODUCTS_DIR}/CwlCatchExceptionSupport/CwlCatchExceptionSupport.framework
 ${BUILT_PRODUCTS_DIR}/CwlMachBadInstructionHandler/CwlMachBadInstructionHandler.framework

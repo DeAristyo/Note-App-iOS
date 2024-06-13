@@ -7,72 +7,76 @@
 
 import Alamofire
 
-
 class NetworkServices {
     static let shared = NetworkServices()
-    private let baseURL = "http://localhost:3000"
-
-    private init() {}
+    private var baseURL: String {
+        return UserDefaults.standard.baseURL
+    }
     
     // MARK: - Create Note
-    func addNote(note: [String: Any], completion: @escaping (Result<Note, Error>) -> Void) {
+    func addNote(note: [String: Any], completion: @escaping (Result<Messages, Error>) -> Void) {
         let url = "\(baseURL)/notes"
+        
         AF.request(url, method: .post, parameters: note, encoding: JSONEncoding.default)
-            .responseDecodable(of: Note.self) { response in
+            .responseDecodable(of: Messages.self) { response in
                 switch response.result {
-                case .success(let note):
-                    completion(.success(note))
+                case .success(let messages):
+                    completion(.success(messages))
                 case .failure(let error):
                     completion(.failure(error))
                 }
             }
     }
-
+    
     // MARK: - Fetch all Notes
     func getAllNotes(completion: @escaping (Result<[Note], Error>) -> Void) {
         let url = "\(baseURL)/notes"
+        
         AF.request(url, method: .get)
-            .responseDecodable(of: [Note].self) { response in
+            .responseDecodable(of: ResponseArrayData.self) { response in
                 switch response.result {
-                case .success(let notes):
-                    completion(.success(notes))
+                case .success(let responseData):
+                    completion(.success(responseData.data.notes))
                 case .failure(let error):
                     completion(.failure(error))
                 }
             }
     }
-
+    
     //MARK: - Fetch Note with ID params
-    func getNoteWithId(noteId: String, completion: @escaping (Result<Note, Error>) -> Void) {
+    func getNoteWithId(noteId: String, completion: @escaping (Result<NoteDetailsData, Error>) -> Void) {
         let url = "\(baseURL)/notes/\(noteId)"
-        AF.request(url, method: .get)
-            .responseDecodable(of: Note.self) { response in
-                switch response.result {
-                case .success(let note):
-                    completion(.success(note))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
+        
+        AF.request(url, method: .get).responseDecodable(of: ResponseData.self) { response in
+            switch response.result {
+            case .success(let responseData):
+                let note = responseData.data
+                completion(.success(note))
+            case .failure(let error):
+                completion(.failure(error))
             }
+        }
     }
-
+    
     // MARK: - Update Note
-    func updateNote(noteId: String, note: [String: Any], completion: @escaping (Result<Note, Error>) -> Void) {
+    func updateNote(noteId: String, note: [String: Any], completion: @escaping (Result<Messages, Error>) -> Void) {
         let url = "\(baseURL)/notes/\(noteId)"
+        
         AF.request(url, method: .put, parameters: note, encoding: JSONEncoding.default)
-            .responseDecodable(of: Note.self) { response in
+            .responseDecodable(of: Messages.self) { response in
                 switch response.result {
-                case .success(let note):
-                    completion(.success(note))
+                case .success(let message):
+                    completion(.success(message))
                 case .failure(let error):
                     completion(.failure(error))
                 }
             }
     }
-
+    
     // MARK: - Delete Note
     func deleteNote(noteId: String, completion: @escaping (Result<Messages, Error>) -> Void) {
         let url = "\(baseURL)/notes/\(noteId)"
+        
         AF.request(url, method: .delete)
             .responseDecodable(of: Messages.self) { response in
                 switch response.result {
