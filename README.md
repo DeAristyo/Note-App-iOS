@@ -11,6 +11,13 @@ A simple note-taking application built with SwiftUI. This app allows users to se
 - **Delete notes from the API**: Remove notes from the API.
 - **View details and edit notes**: View detailed information about a note, edit it, and save changes to the API.
 
+## API Documentation
+
+This app communicates with a backend API for managing notes. The API project and its documentation can be found at the following link:
+
+[Note App API Documentation](https://github.com/DeAristyo/note-app-back-end)
+
+
 ## Screenshots
 
 <img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="320">
