@@ -20,11 +20,11 @@ This app communicates with a backend API for managing notes. The API project and
 
 ## Screenshots
 
-<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="320">
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/ebe93cd3-093e-462e-b0dd-e4285fb08a1b" width="280">
 
-<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/f287fb26-06e4-417d-ae8f-8d0dcbe46072" width="320">
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/f287fb26-06e4-417d-ae8f-8d0dcbe46072" width="280">
 
-<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/8802bbe5-2184-4dd7-b508-62e018357fe6" width="320">
+<img src="https://github.com/DeAristyo/Note-App-iOS/assets/84317322/8802bbe5-2184-4dd7-b508-62e018357fe6" width="280">
 
 ## Video Screenshot
 
